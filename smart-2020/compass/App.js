@@ -26,7 +26,7 @@ export default function App() {
 
   const _subscribe = () => {
     this._subscription = Accelerometer.addListener(accelerometerData => {
-      setData(compassHeading(accelerometerData.z, accelerometerData.x, accelerometerData.y));
+      setData(compassHeading(accelerometerData.z, accelerometerData.y, accelerometerData.x));
     });
   };
 
