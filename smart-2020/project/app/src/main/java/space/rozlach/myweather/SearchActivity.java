@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.concurrent.TimeUnit;
+
 public class SearchActivity extends AppCompatActivity {
 
     ImageView search;
@@ -35,25 +37,22 @@ public class SearchActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 //                save_Text();
+//                if (textField.getText().toString()==null) {
+//                    Toast.makeText(context, "Please, enter your city", Toast.LENGTH_SHORT).show();
+//                } else {
 
-                if(name!=null && !name.isEmpty() )
-                {
 
-                    SharedPreferences sharedPref = getSharedPreferences("your_city", MODE_PRIVATE);
+                    SharedPreferences sharedPref = getSharedPreferences("ll", MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPref.edit();
-                    editor.putString("city", textField.getText().toString());
+                    editor.putString("m_city", textField.getText().toString());
                     editor.apply();
 
-                    Intent intent = new Intent(SearchActivity.this, TodayForecastActivity.class);
+                   Intent intent = new Intent(SearchActivity.this, TodayForecastActivity.class);
 //                intent.putExtra("city",textField.getText().toString());
 
-                    startActivity(intent);}
-                else {
-                    Toast.makeText(context, "Please, enter your city", Toast.LENGTH_SHORT).show();
-                }
-
+                    startActivity(intent);
+//                }
             }
-
 
         });
 

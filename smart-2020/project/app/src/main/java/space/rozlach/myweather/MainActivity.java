@@ -12,7 +12,7 @@ import android.widget.ImageView;
 public class MainActivity extends AppCompatActivity {
 
     private String name;
-    private int cnt=0;
+    private int k=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,11 +36,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
 
+
         super.onDestroy();
-            if(cnt>0) {
+        SharedPreferences sharedPreferences = getSharedPreferences("ll", MODE_PRIVATE);
+        String name = sharedPreferences.getString("m_city","");
+            if(!name.isEmpty()) {
                 Intent intent = new Intent(MainActivity.this, TodayForecastActivity.class);
                 startActivity(intent);
-                cnt++;
+                k++;
             }
 
     }

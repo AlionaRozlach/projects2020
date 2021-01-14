@@ -41,8 +41,8 @@ public class TodayForecastActivity extends AppCompatActivity {
 
 //        Bundle extras = getIntent().getExtras();
 
-        SharedPreferences sharedPreferences = getSharedPreferences("your_city", MODE_PRIVATE);
-        String name = sharedPreferences.getString("city","");
+        SharedPreferences sharedPreferences = getSharedPreferences("ll", MODE_PRIVATE);
+        String name = sharedPreferences.getString("m_city","");
         if (name != null) {
 //            value = extras.getString("city");
             value=name;
