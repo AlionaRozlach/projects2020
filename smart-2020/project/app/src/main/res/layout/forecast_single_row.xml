@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="300dp"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -7,15 +7,18 @@
     android:layout_margin="8dp"
     app:cardElevation="5dp"
     android:layout_marginBottom="5dp"
-    android:foreground="?selectableItemBackground"
+    app:cardBackgroundColor="@color/black"
+    app:strokeColor="@color/white"
+    app:strokeWidth="1dp"
     >
 
 
     <LinearLayout
         android:orientation="vertical"
-        android:background="@color/white"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+
+        >
         <LinearLayout
             android:layout_margin="5dp"
             android:weightSum="2"
@@ -44,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:text="3 PM"
                     android:textSize="28sp"
-                    android:textColor="#000"
+                    android:textColor="@color/white"
                     />
 
                 <TextView
@@ -54,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:text="Friday"
                     android:textSize="16sp"
-                    android:textColor="#000"
+                    android:textColor="@color/white"
                     />
 
                 <TextView
@@ -63,6 +66,7 @@
                     android:layout_height="wrap_content"
                     android:text="27 - 9 - 2018"
                     android:textStyle="italic"
+                    android:textColor="@color/white"
                     />
 
                 <LinearLayout
@@ -86,7 +90,7 @@
                         android:layout_marginStart="3dp"
                         android:text="29"
                         android:textSize="22sp"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
                         />
 
                 </LinearLayout>
@@ -96,7 +100,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="sunny"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     />
             </LinearLayout>
             <LinearLayout
@@ -113,21 +117,21 @@
                     android:id="@+id/humidityFTV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_humidity"
                     android:textStyle="normal"
                     android:text=" 29 %"
                     android:gravity="left"
                     android:padding="4dp"
+                    android:textColor="@color/white"
                     />
                 <TextView
                     android:id="@+id/cloudFTV"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_cloud"
                     android:textStyle="normal"
                     android:gravity="left"
                     android:text=" 29 %"
                     android:padding="4dp"
+                    android:textColor="@color/white"
 
                     />
 
@@ -136,29 +140,28 @@
                     android:layout_marginTop="5dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_max_temp"
                     android:textStyle="normal"
                     android:gravity="left"
                     android:text=" 29 "
                     android:padding="4dp"
+                    android:textColor="@color/white"
                     />
 
                 <TextView
                     android:id="@+id/tempMinFTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_min_temp"
                     android:textStyle="normal"
                     android:gravity="left"
                     android:text=" 29 "
                     android:padding="4dp"
+                    android:textColor="@color/white"
                     />
             </LinearLayout>
 
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
-            android:divider="@color/colorPrimary"
             android:dividerPadding="3dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -169,17 +172,20 @@
                 android:id="@+id/windsFTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/winds"/>
+                android:textColor="@color/white"
+                android:text=""/>
             <TextView
                 android:id="@+id/pressureFTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pressure"/>
+                android:text="@string/pressure"
+                android:textColor="@color/white"/>
             <TextView
                 android:id="@+id/cloudsAllFTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/clouds"/>
+                android:textColor="@color/white"
+                android:text=""/>
 
         </LinearLayout>
 
@@ -188,4 +194,4 @@
 
 
 
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

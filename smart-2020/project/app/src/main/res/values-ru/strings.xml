@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_small_name"> Прогноз погоды</string>
+    <string name="city">Введите название города</string>
+    <string name="humidity">Влажность</string>
+    <string name="pressure">Давление</string>
+    <string name="realFeel">Вероятность дождя</string>
+    <string name="windSpeed">Скорость ветра</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+    <string name="app_name">Погода</string>
+    <string name="instructor_name">Bonny Ahmad</string>
+    <string name="dev_name">Abdullah Al-Hasnat</string>
+    <string name="weather_api_key"></string>
+
+    <string name="tab1">Сегодня</string>
+    <string name="tab2">Детальный прогноз на 5 дней</string>
+
+    <string name="settings">Настройки</string>
+
+    <!-- CurrentWeatherFragment all strings -->
+    <string name="today">Сегодня</string>
+    <string name="sunrise">Рассвет:</string>
+    <string name="senset">Закат:</string>
+
+    <string name="max_temp">Мксимальная температура</string>
+    <string name="min_temp">Минимальная температура</string>
+    <string name="clouds">Облачность</string>
+    <string name="winds">Ветер</string>
+    <string name="unit_c">℃</string>
+    <string name="unit_f">℉</string>
+    <string name="degree">Градусы</string>
+    <string name="ambient">Температура вокруг вас</string>
+    <string name="sensor">Датчик температуры не доступен на вашем смартфоне</string>
+
+</resources>

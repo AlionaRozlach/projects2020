@@ -1,24 +1,32 @@
 <resources>
+    <string name="app_small_name">Weather App</string>
+    <string name="city">Enter your city</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="realFeel">Real feel</string>
+    <string name="windSpeed">Wind speed</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
     <string name="app_name">Weather</string>
     <string name="instructor_name">Bonny Ahmad</string>
     <string name="dev_name">Abdullah Al-Hasnat</string>
     <string name="weather_api_key"></string>
 
     <string name="tab1">Today</string>
-    <string name="tab2">5 DAYS Forecast</string>
+    <string name="tab2">5 DAYS Detailed Forecast</string>
 
     <string name="settings">Settings</string>
-
-    <!-- Conflicting with Dhaka in Free API -->
-    <string name="bangshal">Bangshal</string>
-    <string name="dhaka">Dhaka</string>
 
     <!-- CurrentWeatherFragment all strings -->
     <string name="today">Today</string>
     <string name="sunrise">Sunrise:</string>
     <string name="senset">Sunset:</string>
-    <string name="humidity">Humidity</string>
-    <string name="pressure">Pressure</string>
+
     <string name="max_temp">Max Temp</string>
     <string name="min_temp">Min Temp</string>
     <string name="clouds">Clouds</string>
@@ -26,7 +34,8 @@
     <string name="unit_c">℃</string>
     <string name="unit_f">℉</string>
     <string name="degree">Degree</string>
+    <string name="ambient">Ambient temperature in your city</string>
+    <string name="sensor">Temperature Sensor is not Available</string>
 
-    <!-- ForecastWeatherFragment all strings -->
 
 </resources>
