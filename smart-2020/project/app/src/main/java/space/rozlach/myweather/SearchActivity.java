@@ -36,7 +36,7 @@ public class SearchActivity extends AppCompatActivity {
 
 //                save_Text();
 
-                if(name!=null && !name.isEmpty() )
+                if(name!=null )
                 {
 
                     SharedPreferences sharedPref = getSharedPreferences("your_city", MODE_PRIVATE);
