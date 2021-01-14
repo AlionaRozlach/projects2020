@@ -17,7 +17,6 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 import space.rozlach.myweather.R;
-import space.rozlach.myweather.extras.Constant;
 import space.rozlach.myweather.extras.TimeAndDateConverter;
 //import xyz.hasnat.weather.extras.Constant;
 //import xyz.hasnat.weather.extras.TimeAndDateConverter;
@@ -59,7 +58,7 @@ public class ForecastRVAdapter extends RecyclerView.Adapter<space.rozlach.myweat
         if(this.context!=null) {
             //  set icon
             String icon = weatherList.get(position).getWeather().get(0).getIcon();
-            String iconUrl = Constant.baseUrl.WEATHER_IMAGE_BASE_URL + icon + ".png";
+            String iconUrl = "https://openweathermap.org/img/w/" + icon + ".png";
             Picasso.get().load(iconUrl).into(holder.weatherIcon);
 
             // day name
