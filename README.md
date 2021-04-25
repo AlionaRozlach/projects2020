@@ -1,2 +1,3 @@
-app# smart-2020
-
+App compass -- ReactNative-ANDROID
+App dialer  -- ReactNative-ANDROID
+App weatherForecast -- JAVA-ANDROID
